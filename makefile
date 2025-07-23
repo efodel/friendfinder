@@ -1,8 +1,8 @@
 CXX = g++
 CXXFLAGS = -Wall
 
-proj2: load_proj.cpp Organization.o Person.o FriendFinder.o
-	$(CXX) $(CXXFLAGS) proj2.cpp Organization.o Person.o FriendFinder.o -o proj2
+proj: load_proj.cpp Organization.o Person.o FriendFinder.o
+	$(CXX) $(CXXFLAGS) proj.cpp Organization.o Person.o FriendFinder.o -o proj
 
 FriendFinder.o: FriendFinder.h FriendFinder.cpp Organization.o Person.o
 	$(CXX) $(CXXFLAGS) -c FriendFinder.cpp
